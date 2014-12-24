@@ -8,8 +8,13 @@ namespace LoudMessaging
 {
     class program
     {
+        [STAThread]
+        static void Main()
+        {
             Application.EnableVisualStyles();
-            Application.Run(new RoutingForm());
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new LaunchForm());
+        }
     }
 
 }
