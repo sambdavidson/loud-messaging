@@ -39,6 +39,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="StringSocket">
+      <HintPath>..\..\StringSocket\StringSocket\bin\Debug\StringSocket.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -50,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LaunchForm.cs">
+    <Compile Include="Messenger.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LaunchForm.Designer.cs">
-      <DependentUpon>LaunchForm.cs</DependentUpon>
+    <Compile Include="Messenger.Designer.cs">
+      <DependentUpon>Messenger.cs</DependentUpon>
     </Compile>
     <Compile Include="Plexiglass.cs">
       <SubType>Form</SubType>
@@ -66,8 +69,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LaunchForm.resx">
-      <DependentUpon>LaunchForm.cs</DependentUpon>
+    <EmbeddedResource Include="Messenger.resx">
+      <DependentUpon>Messenger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plexiglass.resx">
       <DependentUpon>Plexiglass.cs</DependentUpon>

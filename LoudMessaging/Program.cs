@@ -13,7 +13,7 @@ namespace LoudMessaging
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LaunchForm());
+            Application.Run(new Messenger());
         }
     }
 
