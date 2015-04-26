@@ -17,11 +17,16 @@ namespace LoudMessaging
         private TcpClient tcpClient;
         private TcpListener tcpHost;
         private StringSocket.StringSocket stringSocket;
+        private NotifyIcon notifyIcon;
 
         public Messenger()
         {
             InitializeComponent();
-
+            components = new Container();
+            notifyIcon = new NotifyIcon(this.components);
+            notifyIcon.Icon = Properties.Resources.LM;
+            notifyIcon.Text = "Elliot is a chump.";
+            notifyIcon.Visible = true;
         }
 
         private void hostButton_Click(object sender, EventArgs e)
